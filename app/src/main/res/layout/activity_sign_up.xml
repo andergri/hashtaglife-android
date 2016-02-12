@@ -1,0 +1,85 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUpActivity" >
+
+    <!-- Login form -->
+
+    <ScrollView
+        android:id="@+id/signup_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow0"
+        >
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/username_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="@string/prompt_username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:padding="0dp"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:background="@color/red0"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColorHint="@color/transparentblack"
+                />
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:padding="0dp"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:background="@color/blue0"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:imeActionId="@+id/edittext_action_signup"
+                android:imeActionLabel="@string/signup"
+                android:imeOptions="actionUnspecified"
+                android:textColorHint="@color/transparentblack"
+                />
+
+            <Button
+                android:id="@+id/action_button"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:padding="0dp"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:background="@color/green0"
+                android:text="@string/signup" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

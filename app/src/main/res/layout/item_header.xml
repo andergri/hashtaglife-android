@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/post_done"
+    android:gravity="center_horizontal"
+    >
+<!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/post_suggested"
+        android:visibility="visible"
+        android:background="@color/red1"
+        >
+
+        <TextView
+            android:id="@+id/textView_suggested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="2dp"
+            android:layout_marginTop="9dp"
+            android:text="Hashtag Suggestions"
+            android:textSize="20dp"
+            android:textColor="@color/text"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_suggested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_rightarrow"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/post_done_container"
+        android:gravity="center_horizontal"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="2dp"
+            android:text="Share"
+            android:textSize="26dp"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/icon_rightarrow"
+        />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/post_caution_container"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/post_done_container"
+        android:visibility="gone"
+        android:background="@color/banned"
+        >
+
+            <ImageView
+            android:id="@+id/caution_img"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/item_caution"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                >
+
+                <TextView
+                    android:id="@+id/textViewcaution1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/caution_top_message"
+                    android:textSize="15dp"
+                    android:textColor="@color/text"
+                    android:height="30dp"
+                    android:gravity="bottom"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewcaution2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/caution_bottom_message"
+                    android:textSize="15dp"
+                    android:textColor="@color/text"
+                    android:layout_below="@id/textViewcaution1"
+                    android:height="30dp"
+                    android:gravity="top"
+                    />
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

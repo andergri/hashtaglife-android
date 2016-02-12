@@ -1,0 +1,314 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hashtaglife.hashtaglife.WelcomeActivity"
+    android:background="@color/purple0"
+    android:id="@+id/selfie"
+    >
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listviewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbarSize="7dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="220dp"
+        />
+
+    <SurfaceView
+        android:layout_marginTop="30dp"
+        android:id="@+id/surficeView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.parse.ParseImageView
+        android:id="@+id/selfieImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="0dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+    />
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_exit"
+        android:id="@+id/selfieExit"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:paddingTop="0dp"
+        android:paddingBottom="28dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="25dp"
+        />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_openflag"
+        android:id="@+id/selfieFlag"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:tag="open"
+        android:scaleType="fitXY"
+        android:paddingTop="2dp"
+        android:paddingBottom="32dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="10dp"
+        />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_back"
+        android:id="@+id/selfieBack"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:paddingTop="3dp"
+        android:paddingBottom="26dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="29dp"
+        android:rotation="90"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backgroundgradientblack"
+        android:id="@+id/selfieBottomBox"
+        android:clickable="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/selfieHashtagsBox"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            >
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/selfieHashtags"
+            android:textColor="@color/text"
+            android:textSize="21dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="4dp"
+            android:lineSpacingExtra="1dp"
+            android:gravity="bottom"
+            android:paddingBottom="54dp"
+            />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            >
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/icon_eye"
+                android:id="@+id/selfieViewsIcon"
+                android:scaleType="fitXY"
+                android:padding="3dp"
+                />
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/selfieViewsText"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:lineSpacingExtra="1dp"
+                android:gravity="center_vertical|end"
+                android:layout_marginRight="48dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/selfieVoteBox"
+            android:background="@null"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/round_background"
+                    android:id="@+id/selfieUpvoteBackground"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="8dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/round_background"
+                    android:id="@+id/selfieDownvoteBackground"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="8dp"
+                    />
+
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="40"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:id="@+id/selfieVoteCount"
+                    android:layout_marginRight="1dp"
+                    />
+
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:id="@+id/selfieUpvote"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/selfieDownvote"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="#temp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:id="@+id/selfieSelectedHashtag"
+        />
+
+    <ProgressBar
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/selfieSelectedHashtag"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/selfieProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/animateOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="26dp"
+            android:text="my votes"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="22dp"
+            android:id="@+id/slideText"
+            android:textColor="@color/text"
+            android:visibility="invisible"
+            />
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/slideText"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_downarrow"
+            android:id="@+id/slideArrow"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:visibility="invisible"
+            />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_uparrow"
+            android:id="@+id/slideArrowUp"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_marginBottom="140dp"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+</RelativeLayout>

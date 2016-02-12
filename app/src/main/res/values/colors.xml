@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="text" type="color">#FFF</item>
+    <item name="text_gray" type="color">#ffd7d7d7</item>
+    <item name="background" type="color">#000</item>
+    <item name="light_background" type="color">#fff9f9f9</item>
+    <item name="transparentblack" type="color">#78000000</item>
+    <item name="transparentvote" type="color">#1f000000</item>
+    <item name="transparent" type="color">#00000000</item>
+    <item name="location" type="color">#ff585858</item>
+    <item name="dark" type="color">#ff585858</item>
+    <item name="locationdark" type="color">#555555</item>
+    <item name="tapped" type="color">#555555</item>
+    <item name="banned" type="color">#FF7F00</item>
+
+    // Red
+    <item name="red0" type="color">#D24D57</item>
+    <item name="red1" type="color">#F22613</item>
+    <item name="red2" type="color">#D91E18</item>
+    <item name="red3" type="color">#96281B</item>
+
+    <item name="red4" type="color">#EF4836</item>
+    <item name="red5" type="color">#D64541</item>
+    <item name="red6" type="color">#C0392B</item>
+    <item name="red7" type="color">#E74C3C</item>
+    <item name="red8" type="color">#F64747</item>
+
+    // Pink
+    <item name="pink0" type="color">#D2527F</item>
+    <item name="pink1" type="color">#E26A6A</item>
+
+    // Purple
+    <item name="purple0" type="color">#663399</item>
+    <item name="purple1" type="color">#674172</item>
+    <item name="purple2" type="color">#913D88</item>
+    <item name="purple3" type="color">#9A12B3</item>
+    <item name="purple4" type="color">#8E44AD</item>
+    <item name="purple5" type="color">#9B59B6</item>
+
+    // Blue
+    <item name="blue0" type="color">#446CB3</item>
+    <item name="blue1" type="color">#4183D7</item>
+    <item name="blue2" type="color">#59ABE3</item>
+    <item name="blue3" type="color">#52B3D9</item>
+
+    <item name="blue4" type="color">#3498DB</item>
+    <item name="blue5" type="color">#336E7B</item>
+    <item name="blue6" type="color">#6BB9F0</item>
+    <item name="blue7" type="color">#1E8BC3</item>
+    <item name="blue8" type="color">#3A539B</item>
+
+    <item name="blue9" type="color">#67809F</item>
+    <item name="blue10" type="color">#2574A9</item>
+    <item name="blue11" type="color">#1F3A93</item>
+    <item name="blue12" type="color">#4B77BE</item>
+    <item name="blue13" type="color">#5C97BF</item>
+
+
+    // green
+    <item name="green0" type="color">#4ECDC4</item>
+    <item name="green1" type="color">#87D37C</item>
+    <item name="green2" type="color">#90C695</item>
+    <item name="green3" type="color">#26A65B</item>
+
+    <item name="green4" type="color">#03C9A9</item>
+    <item name="green5" type="color">#68C3A3</item>
+    <item name="green6" type="color">#1BBC9B</item>
+    <item name="green7" type="color">#1BA39C</item>
+    <item name="green8" type="color">#66CC99</item>
+
+    <item name="green9" type="color">#2ECC71</item>
+    <item name="green10" type="color">#16A085</item>
+    <item name="green11" type="color">#3FC380</item>
+    <item name="green12" type="color">#019875</item>
+    <item name="green13" type="color">#03A678</item>
+
+    <item name="green14" type="color">#4DAF7C</item>
+    <item name="green15" type="color">#2ABB9B</item>
+    <item name="green16" type="color">#00B16A</item>
+    <item name="green17" type="color">#1E824C</item>
+    <item name="green18" type="color">#049372</item>
+
+    <item name="green19" type="color">#26C281</item>
+
+    // Yellow, Orange
+    <item name="yellow0" type="color">#F89406</item>
+    <item name="yellow1" type="color">#EB9532</item>
+    <item name="yellow2" type="color">#E87E04</item>
+    <item name="yellow3" type="color">#F4B350</item>
+
+    <item name="yellow4" type="color">#F2784B</item>
+    <item name="yellow5" type="color">#EB974E</item>
+    <item name="yellow6" type="color">#F5AB35</item>
+    <item name="yellow7" type="color">#D35400</item>
+    <item name="yellow8" type="color">#F39C12</item>
+
+    <item name="yellow9" type="color">#F9690E</item>
+    <item name="yellow10" type="color">#F9BF3B</item>
+    <item name="yellow11" type="color">#F27935</item>
+    <item name="yellow12" type="color">#E67E22</item>
+
+    <integer-array name="colorPicker">
+        <item>@color/red0</item>
+        <item>@color/red1</item>
+        <item>@color/red2</item>
+        <item>@color/red3</item>
+        <item>@color/red4</item>
+        <item>@color/red5</item>
+        <item>@color/red6</item>
+        <item>@color/red7</item>
+        <item>@color/red8</item>
+        <item>@color/pink0</item>
+        <item>@color/pink1</item>
+        <item>@color/purple0</item>
+        <item>@color/purple1</item>
+        <item>@color/purple2</item>
+        <item>@color/purple3</item>
+        <item>@color/purple4</item>
+        <item>@color/purple5</item>
+        <item>@color/blue0</item>
+        <item>@color/blue1</item>
+        <item>@color/blue2</item>
+        <item>@color/blue3</item>
+        <item>@color/blue4</item>
+        <item>@color/blue5</item>
+        <item>@color/blue6</item>
+        <item>@color/blue7</item>
+        <item>@color/blue8</item>
+        <item>@color/blue9</item>
+        <item>@color/blue10</item>
+        <item>@color/blue11</item>
+        <item>@color/blue12</item>
+        <item>@color/blue13</item>
+        <item>@color/green0</item>
+        <item>@color/green1</item>
+        <item>@color/green2</item>
+        <item>@color/green3</item>
+        <item>@color/green4</item>
+        <item>@color/green5</item>
+        <item>@color/green6</item>
+        <item>@color/green7</item>
+        <item>@color/green8</item>
+        <item>@color/green9</item>
+        <item>@color/green10</item>
+        <item>@color/green11</item>
+        <item>@color/green12</item>
+        <item>@color/green13</item>
+        <item>@color/green14</item>
+        <item>@color/green15</item>
+        <item>@color/green16</item>
+        <item>@color/green17</item>
+        <item>@color/green18</item>
+        <item>@color/green19</item>
+        <item>@color/yellow0</item>
+        <item>@color/yellow1</item>
+        <item>@color/yellow2</item>
+        <item>@color/yellow3</item>
+        <item>@color/yellow4</item>
+        <item>@color/yellow5</item>
+        <item>@color/yellow6</item>
+        <item>@color/yellow7</item>
+        <item>@color/yellow8</item>
+        <item>@color/yellow9</item>
+        <item>@color/yellow10</item>
+        <item>@color/yellow11</item>
+        <item>@color/yellow12</item>
+    </integer-array>
+
+</resources>

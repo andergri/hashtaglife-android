@@ -1,0 +1,303 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:6:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:tools
+		ADDED from AndroidManifest.xml:3:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:5:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+application
+ADDED from AndroidManifest.xml:8:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+MERGED from com.android.support:support-v13:21.0.3:16:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+MERGED from com.google.android.gms:play-services:6.5.87:20:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+MERGED from hashtaglife:ParseLoginUI:unspecified:11:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+MERGED from com.commonsware.cwac:camera:0.6.2:5:2
+	android:label
+		ADDED from AndroidManifest.xml:13:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:10:9
+	android:icon
+		ADDED from AndroidManifest.xml:12:9
+	android:largeHeap
+		ADDED from AndroidManifest.xml:11:9
+	android:theme
+		ADDED from AndroidManifest.xml:14:9
+	tools:replace
+		ADDED from AndroidManifest.xml:15:9
+	android:name
+		ADDED from AndroidManifest.xml:9:9
+activity#com.hashtaglife.hashtaglife.ContainerActivity
+ADDED from AndroidManifest.xml:18:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:22:13
+	android:label
+		ADDED from AndroidManifest.xml:20:13
+	android:uiOptions
+		ADDED from AndroidManifest.xml:21:13
+	android:name
+		ADDED from AndroidManifest.xml:19:13
+activity#com.hashtaglife.hashtaglife.DispatchActivity
+ADDED from AndroidManifest.xml:25:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:28:13
+	android:label
+		ADDED from AndroidManifest.xml:27:13
+	android:name
+		ADDED from AndroidManifest.xml:26:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:29:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:30:17
+	android:name
+		ADDED from AndroidManifest.xml:30:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:31:17
+	android:name
+		ADDED from AndroidManifest.xml:31:27
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:34:13
+data
+ADDED from AndroidManifest.xml:35:17
+	android:host
+		ADDED from AndroidManifest.xml:35:52
+	android:scheme
+		ADDED from AndroidManifest.xml:35:23
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:36:17
+	android:name
+		ADDED from AndroidManifest.xml:36:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:37:17
+	android:name
+		ADDED from AndroidManifest.xml:37:27
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:38:17
+	android:name
+		ADDED from AndroidManifest.xml:38:27
+activity#com.hashtaglife.hashtaglife.LoginActivity
+ADDED from AndroidManifest.xml:41:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:44:13
+	android:label
+		ADDED from AndroidManifest.xml:43:13
+	android:name
+		ADDED from AndroidManifest.xml:42:13
+activity#com.hashtaglife.hashtaglife.SignUpActivity
+ADDED from AndroidManifest.xml:46:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:49:13
+	android:label
+		ADDED from AndroidManifest.xml:48:13
+	android:name
+		ADDED from AndroidManifest.xml:47:13
+activity#com.hashtaglife.hashtaglife.WelcomeActivity
+ADDED from AndroidManifest.xml:51:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:54:13
+	android:label
+		ADDED from AndroidManifest.xml:53:13
+	android:name
+		ADDED from AndroidManifest.xml:52:13
+activity#com.airbnb.deeplinkdispatch.DeepLinkActivity
+ADDED from AndroidManifest.xml:56:9
+	android:theme
+		ADDED from AndroidManifest.xml:58:13
+	android:name
+		ADDED from AndroidManifest.xml:57:13
+meta-data#com.google.android.gms.version
+ADDED from AndroidManifest.xml:67:9
+MERGED from com.google.android.gms:play-services:6.5.87:21:9
+	android:value
+		ADDED from AndroidManifest.xml:69:13
+	android:name
+		ADDED from AndroidManifest.xml:68:13
+activity#com.hashtaglife.hashtaglife.RulesActivity
+ADDED from AndroidManifest.xml:71:9
+	android:label
+		ADDED from AndroidManifest.xml:73:13
+	android:name
+		ADDED from AndroidManifest.xml:72:13
+service#com.hashtaglife.hashtaglife.VideoService
+ADDED from AndroidManifest.xml:76:9
+	android:enabled
+		ADDED from AndroidManifest.xml:78:13
+	android:exported
+		ADDED from AndroidManifest.xml:79:13
+	android:name
+		ADDED from AndroidManifest.xml:77:13
+service#com.parse.PushService
+ADDED from AndroidManifest.xml:81:9
+	android:name
+		ADDED from AndroidManifest.xml:81:18
+receiver#com.parse.ParseBroadcastReceiver
+ADDED from AndroidManifest.xml:82:9
+	android:name
+		ADDED from AndroidManifest.xml:82:19
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:83:13
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:84:17
+	android:name
+		ADDED from AndroidManifest.xml:84:25
+action#android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:85:17
+	android:name
+		ADDED from AndroidManifest.xml:85:25
+receiver#com.parse.GcmBroadcastReceiver
+ADDED from AndroidManifest.xml:88:9
+	android:permission
+		ADDED from AndroidManifest.xml:89:13
+	android:name
+		ADDED from AndroidManifest.xml:88:19
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.hashtaglife.hashtaglife
+ADDED from AndroidManifest.xml:90:13
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from AndroidManifest.xml:91:17
+	android:name
+		ADDED from AndroidManifest.xml:91:25
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from AndroidManifest.xml:92:17
+	android:name
+		ADDED from AndroidManifest.xml:92:25
+category#com.hashtaglife.hashtaglife
+ADDED from AndroidManifest.xml:93:17
+	android:name
+		ADDED from AndroidManifest.xml:93:27
+receiver#com.parse.ParsePushBroadcastReceiver
+ADDED from AndroidManifest.xml:96:9
+	android:exported
+		ADDED from AndroidManifest.xml:96:71
+	android:name
+		ADDED from AndroidManifest.xml:96:19
+intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
+ADDED from AndroidManifest.xml:97:13
+action#com.parse.push.intent.RECEIVE
+ADDED from AndroidManifest.xml:98:17
+	android:name
+		ADDED from AndroidManifest.xml:98:25
+action#com.parse.push.intent.DELETE
+ADDED from AndroidManifest.xml:99:17
+	android:name
+		ADDED from AndroidManifest.xml:99:25
+action#com.parse.push.intent.OPEN
+ADDED from AndroidManifest.xml:100:17
+	android:name
+		ADDED from AndroidManifest.xml:100:25
+receiver#com.hashtaglife.hashtaglife.DeepLinkReceiver
+ADDED from AndroidManifest.xml:103:9
+	android:name
+		ADDED from AndroidManifest.xml:103:19
+intent-filter#com.airbnb.deeplinkdispatch.DEEPLINK_ACTION
+ADDED from AndroidManifest.xml:104:13
+action#com.airbnb.deeplinkdispatch.DEEPLINK_ACTION
+ADDED from AndroidManifest.xml:105:17
+	android:name
+		ADDED from AndroidManifest.xml:105:25
+meta-data#io.branch.sdk.BranchKey
+ADDED from AndroidManifest.xml:108:9
+	android:value
+		ADDED from AndroidManifest.xml:108:59
+	android:name
+		ADDED from AndroidManifest.xml:108:20
+uses-permission#android.permission.CAMERA
+ADDED from AndroidManifest.xml:111:5
+	android:name
+		ADDED from AndroidManifest.xml:111:22
+uses-feature#android.hardware.camera
+ADDED from AndroidManifest.xml:113:5
+	android:name
+		ADDED from AndroidManifest.xml:113:19
+uses-feature#android.hardware.camera.autofocus
+ADDED from AndroidManifest.xml:114:5
+	android:required
+		ADDED from AndroidManifest.xml:116:9
+	android:name
+		ADDED from AndroidManifest.xml:115:9
+uses-feature#android.hardware.camera.front
+ADDED from AndroidManifest.xml:117:5
+	android:required
+		ADDED from AndroidManifest.xml:119:9
+	android:name
+		ADDED from AndroidManifest.xml:118:9
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:121:5
+	android:name
+		ADDED from AndroidManifest.xml:121:22
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:122:5
+	android:name
+		ADDED from AndroidManifest.xml:122:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:123:5
+	android:name
+		ADDED from AndroidManifest.xml:123:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:124:5
+	android:name
+		ADDED from AndroidManifest.xml:124:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:125:5
+	android:name
+		ADDED from AndroidManifest.xml:125:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:126:5
+	android:name
+		ADDED from AndroidManifest.xml:126:22
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from AndroidManifest.xml:127:5
+	android:name
+		ADDED from AndroidManifest.xml:127:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:128:5
+	android:name
+		ADDED from AndroidManifest.xml:128:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:129:5
+	android:name
+		ADDED from AndroidManifest.xml:129:22
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from AndroidManifest.xml:130:5
+	android:name
+		ADDED from AndroidManifest.xml:130:22
+permission#com.hashtaglife.hashtaglife.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:131:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:131:17
+	android:name
+		ADDED from AndroidManifest.xml:132:9
+uses-permission#com.hashtaglife.hashtaglife.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:133:5
+	android:name
+		ADDED from AndroidManifest.xml:133:22
+uses-sdk
+INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:support-v4:22.0.0:20:5
+MERGED from com.android.support:support-v13:21.0.3:15:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
+MERGED from com.google.android.gms:play-services:6.5.87:18:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
+MERGED from hashtaglife:ParseLoginUI:unspecified:7:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
+MERGED from com.commonsware.cwac:camera:0.6.2:3:2
+MERGED from io.branch.sdk.android:library:1.8.8:7:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0

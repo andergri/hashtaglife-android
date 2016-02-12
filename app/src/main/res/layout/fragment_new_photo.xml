@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/post_tags"
+        android:orientation="vertical"
+        android:background="@color/text"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:textSize="24sp"
+        android:height="74dp"
+        android:paddingLeft="38dp"
+        android:hint="@string/post_placeholder"
+        android:id="@+id/post_text"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/text"
+        android:background="#00000000"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:textColorHint="@color/transparentblack"
+        />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="74dp"
+        android:textSize="24sp"
+        android:height="74dp"
+        android:layout_marginLeft="18dp"
+        android:text="#"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/text"
+        />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+            android:text="Be nice! No harassment, spam, or anything inappropriate."
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:padding="20dp"
+            />
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/post_hashtags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchview"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="70dp"
+
+        />
+
+    <Button
+        android:id="@+id/post_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/post_back"
+        android:layout_alignParentBottom="true"
+        android:height="70dp"
+        android:textSize="24dp"
+        android:textColor="@color/text"
+        android:layout_marginTop="0dp"
+        android:padding="0dp"
+        android:background="@color/red1"
+        />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/post_visual"
+        android:orientation="vertical"
+        android:background="@color/background"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/post_image"
+                android:scaleType="centerCrop"
+                />
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/icon_exit"
+                android:id="@+id/post_deny"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_button"
+                android:scaleType="fitXY"
+                android:padding="14dp"
+                />
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/icon_checkmark"
+                android:id="@+id/post_accept"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_button"
+                android:scaleType="fitXY"
+                android:padding="12dp"
+                />
+        </RelativeLayout>
+
+</RelativeLayout>

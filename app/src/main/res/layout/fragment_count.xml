@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hashtaglife.hashtaglife.WelcomeActivity"
+    android:background="@color/purple0"
+    >
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_exit"
+        android:id="@+id/countExit"
+        android:layout_margin="0dp"
+        android:background="@null"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/countCount"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/purple0"
+        android:text=""
+        android:textSize="36dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/countCount"
+        android:text="Total Points"
+        android:textColor="@color/text"
+        android:id="@+id/countHeaderA"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/countHeaderA"
+        android:text="Earn more points by posting more photos"
+        android:textColor="@color/text"
+        android:id="@+id/countMessageA"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        />
+    
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/share_image_color"
+        android:scaleType="fitXY"
+        android:padding="15dp"
+        android:id="@+id/countShare"
+        android:background="@drawable/rounded_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/countMessageA"
+        android:layout_marginTop="0dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_below="@+id/countShare"
+        android:text="Share"
+        android:textColor="@color/text"
+        android:id="@+id/countHeaderB"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/countHeaderB"
+        android:text="Spread the word"
+        android:textColor="@color/text"
+        android:id="@+id/countMessageB"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

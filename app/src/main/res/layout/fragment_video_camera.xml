@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <FrameLayout
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/camera_take"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/camera_flashoff"
+            android:tag="flashoff"
+            android:id="@+id/camera_photo_flash"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/camera_switch"
+            android:id="@+id/camera_photo_switch"
+            android:background="@null"
+            android:tag="back"
+            android:scaleType="fitXY"
+            android:padding="8dp"
+            />
+
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/design_list"
+            android:id="@+id/leftButton"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            />
+<!---
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/camera_image"
+            android:id="@+id/rightButton"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:scaleType="fitXY"
+            android:padding="12dp"
+            /> -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:background="@drawable/camera_border"
+            android:id="@+id/cameraBorder"
+            >
+
+            <ImageButton
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_button"
+                android:id="@+id/camera_photo_button"
+                android:padding="12dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_accept"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/post_image"
+            android:scaleType="centerCrop"
+            />
+        <com.hashtaglife.hashtaglife.TextureVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/post_video"
+            />
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/icon_exit"
+            android:id="@+id/post_deny"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:scaleType="fitXY"
+            android:padding="14dp"
+            />
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/icon_checkmark"
+            android:id="@+id/post_accept"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button"
+            android:scaleType="fitXY"
+            android:padding="12dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
